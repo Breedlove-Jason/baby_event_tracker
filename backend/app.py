@@ -1,12 +1,12 @@
 from datetime import datetime
-
 from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://jason:QJF46*8T.dtnYeLEX7*sh@localhost/baby-tracker'
 db = SQLAlchemy(app)
-db.init_app(app)
+CORS(app)
 
 
 class Event(db.Model):
