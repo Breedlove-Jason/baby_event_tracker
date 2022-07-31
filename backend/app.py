@@ -4,7 +4,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://jason:QJF46*8T.dtnYeLEX7*sh@localhost/baby-tracker'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://babytracker:BabyTracker2022@localhost/baby-tracker'
 db = SQLAlchemy(app)
 CORS(app)
 
