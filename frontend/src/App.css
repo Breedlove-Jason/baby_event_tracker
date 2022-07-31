@@ -2,18 +2,23 @@
     text-align: center;
 }
 
-body{
-    text-align: center;
+body {
     background: rgb(2, 0, 36);
     background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-
+    color: white;
+    text-align: center;
 }
 
-input, button{
-    display:block;
+input, button {
+    display: block;
     margin: 8px 0;
 }
 
-h1{
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
     color: white;
 }
